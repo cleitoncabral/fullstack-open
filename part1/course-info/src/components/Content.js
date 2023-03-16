@@ -1,11 +1,11 @@
 import Part from '../components/Part'
 
-function Content({parts, exercises}){
+function Content({parts}){
   return (
     <div>
-      <Part parts={parts.part1} exercises={exercises.exercises1} />
-      <Part parts={parts.part2} exercises={exercises.exercises2} />
-      <Part parts={parts.part3} exercises={exercises.exercises3} />
+      <Part parts={parts[0].name} exercises={parts[0].exercises} />
+      <Part parts={parts[1].name} exercises={parts[1].exercises} />
+      <Part parts={parts[2].name} exercises={parts[2].exercises} />
     </div>
   )
 }
