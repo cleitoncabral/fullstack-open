@@ -1,6 +1,19 @@
-import Button from "./components/Buttons";
 import {useState} from 'react'
-import Statistics from "./components/Statistics";
+
+function Button ({handleClick, text}) {
+  return (
+    <button onClick={handleClick}>{text}</button>
+  )
+}
+
+function Statistics ({textContent, statisticsValue}) {
+  return (
+    <tr>
+      <td>{textContent} </td>
+      <td> {statisticsValue}</td>
+    </tr>
+  )
+}
 
 function App() {
   const [good, setGood] = useState(0)
@@ -34,10 +47,15 @@ function App() {
   
         <h2>statistics</h2>
   
-        <Statistics textContent="good" statisticsValue={good} />
-        <Statistics textContent="neutral" statisticsValue={neutral} />
-        <Statistics textContent="bad" statisticsValue={bad} />
-        <Statistics textContent="all" statisticsValue={total} />
+        <table>
+
+          <tbody>
+          <Statistics textContent="good" statisticsValue={good} />
+          <Statistics textContent="neutral" statisticsValue={neutral} />
+          <Statistics textContent="bad" statisticsValue={bad} />
+          <Statistics textContent="all" statisticsValue={total} />
+          </tbody>
+        </table>
   
         <p>avarage {(good + bad * (-1)) / total}</p>
         <p>positive {(good*100) / total} %</p>
