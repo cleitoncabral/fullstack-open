@@ -1,8 +1,9 @@
-function PersonNumber ({persons}) {
+import DeleteButton from "./DeleteButton";
+
+function PersonNumber ({person, handleClick}) {
+  
   return (
-    persons.map((person) =>  {
-      return <li key={person.id}>{person.name} {person.number}</li>
-    })
+    <p key={person.id}>{person.name} {person.number} <DeleteButton person={person}  handleClick={handleClick} /></p>
   )
 }
 

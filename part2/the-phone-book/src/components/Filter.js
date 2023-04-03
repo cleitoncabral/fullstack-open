@@ -3,24 +3,22 @@ import {useState} from 'react'
 function Filter ({personsList}) {
   
   const [filterName, setFilterName] = useState('')
-  const [filterNumber, setFilterNumber] = useState('')
+  
   const filterChange = (event) => {
-     personsList.filter((person) => {
-            if (person.name.toLowerCase().includes(event.target.value.toLowerCase()) && event.target.value.length > 0) {
-              setFilterName(person.name)
-              setFilterNumber(person.number)
-            }  
+    var filterNameList = [...personsList]
 
-            if(event.target.value == ''){
-              return setFilterName('')
-            }
-      })
-    }
+    var filterNameList = personsList.filter(person => {
+      return person.name.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
+    })
+
+    event.target.value ? setFilterName(filterNameList) : setFilterName('')
+
+  }
   
   return (
     <div>
       Filter number <input type="name" onChange={filterChange} />
-      {filterName ? <p>{filterName} {filterNumber}</p> : <p></p>}
+      {filterName.length > 0 ? filterName.map(filter => <p key={filter.id}>{filter.name} {filter.number}</p>) : <p></p>}
     </div>
   )
 }
