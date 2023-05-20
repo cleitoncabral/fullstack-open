@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Second post with a user",
+  "author": "Cleitons",
+  "url": "www.secondpostwithuser.com",
+  "likes": 5,
+  "userId" : "6467bf3d9af6b6b4626837de"
+}
