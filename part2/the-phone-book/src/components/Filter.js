@@ -5,7 +5,7 @@ function Filter ({personsList}) {
   const [filterName, setFilterName] = useState('')
   
   const filterChange = (event) => {
-    var filterNameList = [...personsList]
+    // var filterNameList = [...personsList]
 
     var filterNameList = personsList.filter(person => {
       return person.name.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1

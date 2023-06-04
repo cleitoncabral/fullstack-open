@@ -1,0 +1,16 @@
+.notification {
+  background: #aeb3b2;
+  width: 300px;
+  color: black;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.notification.notification--success {
+  border: 3px solid#307e44;
+}
+
+.notification.notification--error {
+  border: 3px solid#791111;
+}

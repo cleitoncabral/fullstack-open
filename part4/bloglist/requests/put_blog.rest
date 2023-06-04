@@ -1,0 +1,11 @@
+PUT http://localhost:3003/api/blogs/647a7a49dc5ef1900defdcf6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNsZWl0b24iLCJpZCI6IjY0NmZmMWMzYmNiMjI3MTJiNWZjYWNjOCIsImlhdCI6MTY4NTc1NjA0MSwiZXhwIjoxNjg1NzU5NjQxfQ.HBFnCn5Og54oY3NcxcjDTnWwQVrvIVR3YS6_xflwufA
+
+{
+  "title": "atualizando likes",
+  "author": "Cleiton",
+  "url": "www.secondpostwithuser.com",
+  "likes": 9,
+  "user" : "6467e682a070d711150e45e0"
+}

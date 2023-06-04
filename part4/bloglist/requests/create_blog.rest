@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNsZWl0b24iLCJpZCI6IjY0NjhmYjRlMTcyMGE5NzkxYzgxMjIxMiIsImlhdCI6MTY4NDg4MTcyNywiZXhwIjoxNjg0ODg1MzI3fQ.X34bMHwVtb_mn-Cd7Dx1lrPezSiHD5_iajiWIT1Vk40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNsZWl0b24iLCJpZCI6IjY0NmZmMWMzYmNiMjI3MTJiNWZjYWNjOCIsImlhdCI6MTY4NTQwNDE1NSwiZXhwIjoxNjg1NDA3NzU1fQ.feB20QSmCfsT1f8YTg8rPyVgbLEOR5gYNjI_x126_Zs
 
 {
-  "title": "first blog to be deleted with a new middleware method",
-  "author": "Cleitons",
+  "title": "blueblueblue teste",
+  "author": "Cleiton",
   "url": "www.secondpostwithuser.com",
   "likes": 5,
   "user" : "6467e682a070d711150e45e0"
